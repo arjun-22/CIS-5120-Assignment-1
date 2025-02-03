@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background-color: #0D0B3C;
+    color: white;
+    font-family: 'Fredoka';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.temperature {
+    font-size: 108px;
+    font-weight: 500;
+    margin: 30px;
+}
+
+.clothes {
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    text-align: center;
+    gap: 1px;
+    margin-bottom: 50px; 
+}
+
+.time, .temp, .precip, .wind, .humidity, .uv {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.precip img, .wind img, .humidity img, .uv img {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+}
+
+.humidity-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48; 
+}
+
+.humidity-text {
+    text-align: center;
+    margin-top: 5px;
+}
